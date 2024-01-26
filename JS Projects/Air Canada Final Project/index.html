@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navigationbar">
+      <div class="nav-center">
+        <!-- nav header -->
+        
+        <div class="nav-header">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="links"> 
+            <div class="buttons">
+                   <!-- This button is the plane that closes the nav bar, and reopens it as well -->
+            <button onclick="myFunction()"><i class="fa-solid fa-plane"></i></button>
+            <!-- This button adds likes to the like counter below the review -->
+            <button class="btn addlike">Like</button> 
+            <!-- This button resets the like counter below the review-->
+            <button class="btn resetlikes">reset</button> 
+            <!-- This button adds dislikes to the like counter below the review-->
+            <button class="btn adddislike">Dislike</button> 
+            <!-- This button swaps the background color of the site to a random one-->
+            <button id="colorswap">Color Swap</button> 
+            <!-- This button cycles to the previous person-->
+            <button class="prev-btn">Previous</button> 
+            <!-- This button cycles to the next person-->
+            <button class="next-btn">Next</button> 
+            <!-- This button slides a text across the screen using animations-->
+            <button class="animate" onclick="myMove()">Mystery Button</button> 
+          </div>
+            
+            </div> 
+    </nav>
+    
+    <main>
+      <section class="container">
+        <!-- title -->
+        <div class="title">
+          <h2>Air Canada<i class="fa-brands fa-canadian-maple-leaf"><button onclick="myFunction()"><i class="fa-solid fa-plane"></i></button></i></h2>
+          <div class="underline"></div>
+        </div>
+        <!-- review -->
+        <article class="review">
+          <div class="img-container">
+            <img src="Daniel.png" id="person-img" alt="" />
+          </div>
+          <h4 id="author">placeholder</h4>
+          <p id="job">place holder</p>
+          <p id="info">
+            placeholder
+          </p>
+          <h1 class="likes">Likes: <i class="fa-solid fa-heart"></i></h1>
+          <span id="value">0</span>
+          <div id="animate">
+            Remember to leave a like ! ! ! - :)
+       </div>
+  
+        </article>
+      </section>
+    </main>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
